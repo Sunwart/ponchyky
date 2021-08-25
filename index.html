@@ -17,8 +17,30 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="Donut Masterclass Logo" />
-      <button type="button">burger-menu</button>
+      <a href="./index.html"><img src="./images/logo.svg" alt="Donut Masterclass Logo" /></a>
+
+      <button type="button" class="mobile-menu-btn" data-menu-open>
+        <svg width="30" height="16" aria-label="Mobile menu open button">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu" data-menu>
+        <nav class="mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg width="40" height="40" aria-label="Mobile menu close button">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <a href="./index.html"><img src="./images/logo.svg" alt="Donut Masterclass Logo" /></a>
+          <ul>
+            <li><a href="./#about-us">About us</a></li>
+            <li><a href="./#program">Program</a></li>
+            <li><a href="./#reviews">Reviews</a></li>
+            <li><a href="./#contact">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -31,31 +53,31 @@
         <ul>
           <li>
             <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <svg>
-                <use></use>
+              <svg width="18.95" height="15" aria-label="Twitter link">
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <svg>
-                <use></use>
+              <svg width="15" height="15" aria-label="Instagram link">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <svg>
-                <use></use>
+              <svg width="8.11" height="15" aria-label="Facebook link">
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </section>
 
-      <article>
+      <section id="about-us">
         <img src="./images/about/hero-mobile.png" alt="Donut, take-away coffee and packaging box" />
-        <h1>About us</h1>
+        <h2>About us</h2>
         <p>
           Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated
           donuts which will save the world!
@@ -65,10 +87,15 @@
           created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
           shop have received multiple awards & recognition for excellence.
         </p>
-        <a href="#">Read more</a>
-      </article>
+        <a href="#about-more" id="about-less">Read more</a>
+        <p id="about-more">
+          We are going to teach you how to cook with passion and sparkles in your eyes! We love what
+          we do and believe you will enjoy our cooking atmosphere!
+        </p>
+        <a href="#about-less">Less</a>
+      </section>
 
-      <section>
+      <section id="program">
         <h2>Program</h2>
         <p>
           Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York
@@ -83,7 +110,12 @@
           <li>> Secret receipt of cooking from Eva</li>
           <li>> All products are included in the price</li>
         </ul>
-        <a href="#">Read more</a>
+        <a href="#program-more" id="program-less">Read more</a>
+        <p id="program-more">
+          Come with your dear people and friends and you will spend an unforgettable time and will
+          become a real professional in donuts cooking!
+        </p>
+        <a href="#program-less">Less</a>
       </section>
 
       <section>
@@ -109,8 +141,53 @@
           </li>
         </ul>
       </section>
+
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <img src="./images/reviews/will-mobile.jpg" alt="Will" />
+        <p>
+          Last time I have visited a cooking course by Eva I was impressed with the way she
+          explained everything to people. You can be sure you will manage to cook a delicious dish
+          even if it is your first time in the kitchen! Thank you so much for the masterclass!
+          Looking forward to the next one and highly recommend it to everyone!
+        </p>
+        <!-- Counter goes here -->
+      </section>
+
+      <section>
+        <h2>Registration</h2>
+        <p>May 23, 11:00 New York</p>
+        <p>$ 699</p>
+        <form>
+          <p>Apply your personal info for registration</p>
+          <input type="text" name="username" placeholder="Your name" />
+          <input type="tel" name="phone" placeholder="Phone number" />
+          <input type="email" name="email" placeholder="Email" />
+          <button type="submit">Register</button>
+        </form>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer id="contact">
+      <form>
+        <p>Contact</p>
+        <p>We will answer any question!</p>
+        <input type="email" name="email" placeholder="Email" />
+        <textarea name="question" rows="1" placeholder="Type your question"></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <!-- Social media links should be dublicated here -->
+
+      <a href="tel:+19102228855">(910)222-8855</a>
+      <a
+        href="https://goo.gl/maps/yh7s9oVqygpCXeji7"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >New York</a
+      >
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
