@@ -13,8 +13,11 @@
   width: 320px;
   height: 460px;
   background-image: url('../../images/bg/top-bg-mobile.svg');
+
+  background-color: cyan;
+
   position: absolute;
-  z-index: -2;
+  z-index: -20;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -50,10 +53,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -10;
   width: 120px;
   height: 114px;
   background-image: url('../../images/bg/donut-top-mobile.png');
+
+  background-color: brown;
+
   background-size: contain;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),

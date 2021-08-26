@@ -144,8 +144,9 @@ p {
   width: 320px;
   height: 460px;
   background-image: url("../../images/bg/top-bg-mobile.svg");
+  background-color: cyan;
   position: absolute;
-  z-index: -2;
+  z-index: -20;
 }
 
 @media screen and (min-width: 768px) {
@@ -184,10 +185,11 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -10;
   width: 120px;
   height: 114px;
   background-image: url("../../images/bg/donut-top-mobile.png");
+  background-color: brown;
   background-size: contain;
 }
 
@@ -254,6 +256,8 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  -webkit-transition: opacity 500ms linear, visibility 500ms linear;
+  -o-transition: opacity 500ms linear, visibility 500ms linear;
   transition: opacity 500ms linear, visibility 500ms linear;
 }
 
@@ -266,8 +270,15 @@ p {
 .mobile-menu__container {
   position: relative;
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
