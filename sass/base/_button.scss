@@ -2,10 +2,17 @@
   width: 145px;
   height: 40px;
   border: none;
-  background: var(--color-brand);
+  background-color: var(--color-brand);
   border-radius: 25px;
   color: var(--color-bg);
 
   font-family: var(--font-brand);
   @include font(18px, 400, 36px);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+    background-color: var(--color-bg);
+    box-shadow: 7px 7px 32px var(--color-brand-transparent);
+  }
 }
