@@ -12,9 +12,7 @@
 .header--bg {
   width: 320px;
   height: 460px;
-  background-image: url('../../images/bg/top-bg-mobile.svg');
-
-  background-color: cyan;
+  background-image: url('../images/bg/top-bg-mobile.svg');
 
   position: absolute;
   z-index: -20;
@@ -22,13 +20,13 @@
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 622px;
-    background-image: url('../../images/bg/top-bg-tablet.svg');
+    background-image: url('../images/bg/top-bg-tablet.svg');
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
     height: 1035px;
-    background-image: url('../../images/bg/top-bg-desktop.svg');
+    background-image: url('../images/bg/top-bg-desktop.svg');
   }
 }
 
@@ -56,9 +54,7 @@
   z-index: -10;
   width: 120px;
   height: 114px;
-  background-image: url('../../images/bg/donut-top-mobile.png');
-
-  background-color: brown;
+  background-image: url('../images/bg/donut-top-mobile.png');
 
   background-size: contain;
 
@@ -67,6 +63,6 @@
     screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
     screen and (min-resolution: 192dpi) and (min-width: 280px),
     screen and (min-resolution: 2dppx) and (min-width: 280px) {
-    background-image: url('../../images/bg/donut-top-mobile@2x.png');
+    background-image: url('../images/bg/donut-top-mobile@2x.png');
   }
 }
