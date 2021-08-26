@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px forestgreen solid;
+}
+
+.hero--title-alignment {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.hero__text {
+  font-family: var(--font-main);
+  @include font(16px, 500, 20px);
+  text-align: center;
+  color: var(--color-main);
+  margin-bottom: 25px;
+}
+
+.hero--btn-gap {
+  margin-bottom: 45px;
+}
+
+.sm-links {
+  display: flex;
+  width: 61px;
+  justify-content: space-between;
+}
+
+.sm-link__icon {
+  fill: currentColor;
+}
+
+.sm-links__item {
+  color: var(--color-main);
+
+  transition: color 500ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
