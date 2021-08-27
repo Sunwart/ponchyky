@@ -119,21 +119,13 @@
       top: 50%;
       left: -70%;
 
-      background-image: url('../images/registration/donut-tasted-tablet.png');
+      background-image: url('../images/registration/donut-tasted-tablet@2x.png');
       background-size: contain;
       background-repeat: no-repeat;
 
       @media screen and (min-width: 1280px) {
         top: 60%;
         left: -110%;
-      }
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url('../images/registration/donut-tasted-tablet@2x.png');
       }
     }
   }
