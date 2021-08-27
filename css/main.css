@@ -63,7 +63,15 @@ p {
   width: 320px;
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
     padding-left: 67px;
@@ -149,7 +157,7 @@ p {
   z-index: -20;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .header--bg {
     width: 768px;
     height: 622px;
@@ -195,6 +203,22 @@ p {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .header--bg::after {
     background-image: url("../images/bg/donut-top-mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header--bg::after {
+    width: 190px;
+    height: 180.5px;
+    background-image: url("../images/bg/donut-top-480.png");
+    background-size: contain;
+    left: 10%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .header--bg::after {
+    background-image: url("../images/bg/donut-top-480@2x.png");
   }
 }
 
@@ -484,6 +508,12 @@ p {
   left: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .underline::after {
+    left: 42px;
+  }
+}
+
 .form {
   text-align: center;
 }
@@ -526,7 +556,7 @@ p {
   z-index: -20;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .bottom--bg {
     width: 768px;
     height: 1260px;
@@ -553,6 +583,7 @@ p {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .contact-details__item {
@@ -564,6 +595,30 @@ p {
 
 .contact-details__item:hover, .contact-details__item:focus {
   color: var(--color-brand);
+}
+
+.contact-details::after {
+  content: ' ';
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+  z-index: -10;
+  width: 87px;
+  height: 64px;
+  background-image: url("../images/bg/donut-bottom-mobile.png");
+  background-size: contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
+  .contact-details::after {
+    background-image: url("../images/bg/donut-bottom-mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contact-details::after {
+    right: -67px;
+  }
 }
 
 .mobile-menu {

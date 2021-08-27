@@ -12,7 +12,7 @@
   right: 0;
   z-index: -20;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 768px;
     height: 1260px;
     background-image: url('../images/bg/bottom-bg-tablet.svg');
@@ -36,6 +36,8 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+
+  position: relative;
 }
 
 .contact-details__item {
@@ -45,5 +47,30 @@
   &:hover,
   &:focus {
     color: var(--color-brand);
+  }
+}
+
+.contact-details::after {
+  content: ' ';
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+  z-index: -10;
+  width: 87px;
+  height: 64px;
+  background-image: url('../images/bg/donut-bottom-mobile.png');
+
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url('../images/bg/donut-bottom-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    right: -67px;
   }
 }

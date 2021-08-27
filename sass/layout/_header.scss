@@ -17,7 +17,7 @@
   position: absolute;
   z-index: -20;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 768px;
     height: 622px;
     background-image: url('../images/bg/top-bg-tablet.svg');
@@ -64,5 +64,21 @@
     screen and (min-resolution: 192dpi) and (min-width: 280px),
     screen and (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: url('../images/bg/donut-top-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 190px;
+    height: 180.5px;
+    background-image: url('../images/bg/donut-top-480.png');
+    background-size: contain;
+    left: 10%;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 480px),
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: url('../images/bg/donut-top-480@2x.png');
   }
 }
