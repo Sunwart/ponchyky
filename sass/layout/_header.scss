@@ -40,6 +40,10 @@
   position: absolute;
   top: 20px;
   right: 0;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .header__logo {
@@ -52,6 +56,12 @@
     top: 0;
     left: 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+    margin-top: 31px;
+  }
 }
 
 .header--bg::after {
@@ -63,7 +73,7 @@
   width: 120px;
   height: 114px;
   background-image: url('../images/bg/donut-top-mobile.png');
-
+  background-repeat: no-repeat;
   background-size: contain;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
@@ -87,5 +97,49 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url('../images/bg/donut-top-tablet@2x.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 719px;
+    height: 660px;
+    left: 43.85%;
+    background-image: url('../images/bg/donut-top-desktop.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/bg/donut-top-desktop@2x.png');
+  }
+}
+
+.main-nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &--gap {
+    margin-top: 55px;
+    margin-right: 20px;
+  }
+
+  &__link {
+    @include font(18px, 400, 22px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-main);
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
   }
 }

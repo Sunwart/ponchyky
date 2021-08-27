@@ -6,9 +6,10 @@
   width: 320px;
   height: 1214px;
   background-image: url('../images/bg/bottom-bg-mobile.svg');
+  background-repeat: no-repeat;
 
   position: absolute;
-  bottom: 250px;
+  bottom: 230px;
   right: 0;
   z-index: -20;
 
@@ -16,13 +17,14 @@
     width: 768px;
     height: 1260px;
     background-image: url('../images/bg/bottom-bg-tablet.svg');
-    bottom: 0;
+    bottom: 60px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
     height: 1560px;
     background-image: url('../images/bg/bottom-bg-desktop.svg');
+    bottom: -30%;
   }
 }
 
@@ -62,6 +64,7 @@
   background-image: url('../images/bg/donut-bottom-mobile.png');
 
   background-size: contain;
+  background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
@@ -76,6 +79,7 @@
     height: 144px;
     background-image: url('../images/bg/donut-bottom-tablet.png');
     right: -67px;
+    bottom: -60px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -84,5 +88,35 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url('../images/bg/donut-bottom-tablet@2x.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 319px;
+    height: 189px;
+    background-image: url('../images/bg/donut-bottom-desktop.png');
+    right: -228px;
+    bottom: -120px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/bg/donut-bottom-desktop@2x.png');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form--alignment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__input--align {
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

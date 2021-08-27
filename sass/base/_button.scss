@@ -1,6 +1,7 @@
 .btn {
   width: 145px;
   height: 40px;
+
   border: none;
   background-color: var(--color-brand);
   border-radius: 25px;
@@ -8,12 +9,18 @@
   text-align: center;
 
   font-family: var(--font-brand);
-  @include font(18px, 400, 36px);
+  @include font(18px, 400, 38px);
 
   &:hover,
   &:focus {
     color: var(--color-brand);
     background-color: var(--color-bg);
     box-shadow: 7px 7px 21px var(--color-brand-transparent);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+    @include font(24px, 400, 44px);
   }
 }

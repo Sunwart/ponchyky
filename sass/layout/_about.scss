@@ -10,7 +10,7 @@
   .about {
     display: flex;
     justify-content: space-between;
-    margin-left: -57px;
+    margin-left: -50px;
   }
 
   .about--alignment {
@@ -23,5 +23,16 @@
 
   .about__text {
     margin-top: 55px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text {
+    margin-top: 105px;
+    margin-left: -100px;
+  }
+
+  .about--alignment {
+    flex-basis: 47%;
   }
 }

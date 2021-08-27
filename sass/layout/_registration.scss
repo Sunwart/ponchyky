@@ -9,6 +9,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 10px;
     padding-bottom: 95px;
+    margin-bottom: 50px;
   }
 }
 
@@ -19,6 +20,10 @@
 
   @media screen and (min-width: 768px) {
     text-align: right;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(24px, 500, 36px);
   }
 }
 
@@ -47,6 +52,12 @@
       bottom: 20px;
       left: 103px;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 190px;
+      bottom: 50px;
+      left: 210px;
+    }
   }
 }
 
@@ -58,6 +69,10 @@
   @include font(16px, 400, 20px);
   margin-bottom: 17px;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    @include font(18px, 400, 22px);
+  }
 }
 
 .form__input {
@@ -106,13 +121,19 @@
 
       background-image: url('../images/registration/donut-tasted-tablet.png');
       background-size: contain;
+      background-repeat: no-repeat;
 
-      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-        screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
-        screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px),
-        screen and (min-resolution: 192dpi) and (min-width: 768px),
-        screen and (min-resolution: 2dppx) and (min-width: 768px) {
-        background-image: url('../images/registration/donut-tasted-tablet@2x  .png');
+      @media screen and (min-width: 1280px) {
+        top: 60%;
+        left: -110%;
+      }
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/registration/donut-tasted-tablet@2x.png');
       }
     }
   }
@@ -130,5 +151,17 @@
 
   .form__legend--align {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--center {
+    position: absolute;
+    bottom: -30%;
+    left: -4.5%;
+  }
+
+  .registration__details--alignment {
+    flex-basis: 30%;
   }
 }

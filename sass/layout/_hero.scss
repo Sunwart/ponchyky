@@ -16,6 +16,10 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+
+  @media screen and (min-width: 1280px) {
+    @include font(64px, 400, 65px);
+  }
 }
 
 .hero__title--alignment {
@@ -29,15 +33,23 @@
   text-align: center;
   color: var(--color-main);
   margin-bottom: 25px;
+
+  @media screen and (min-width: 1280px) {
+    @include font(24px, 500, 29px);
+    margin-bottom: 35px;
+  }
 }
 
 .hero--btn-gap {
   margin-bottom: 35px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 75px;
+  }
 }
 
 .sm-links {
   display: flex;
-  width: 61px;
+  width: 80px;
   justify-content: space-between;
 }
 
