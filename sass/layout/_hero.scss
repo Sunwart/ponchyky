@@ -2,9 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
 
-.hero--title-alignment {
+.hero__title {
+  font-family: var(--font-brand);
+  @include font(30px, 400, 38px);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.hero__title--alignment {
   display: block;
   margin-bottom: 5px;
 }

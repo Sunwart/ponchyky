@@ -1,13 +1,11 @@
-.title {
-  font-family: var(--font-brand);
-  @include font(30px, 400, 38px);
-  text-align: center;
-}
-
 .sub-title {
   font-family: var(--font-brand);
   @include font(24px, 400, 65px);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .paragraph {
@@ -19,4 +17,8 @@
   @include font();
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+}
+
+.title--center {
+  text-align: center;
 }

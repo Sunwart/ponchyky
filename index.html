@@ -85,8 +85,8 @@
 
     <main class="container">
       <section class="hero">
-        <h1 class="title">
-          Donut Masterclass <span class="hero--title-alignment">with the Donut King</span>
+        <h1 class="hero__title">
+          Donut Masterclass <span class="hero__title--alignment">with the Donut King</span>
         </h1>
         <p class="hero__text">Hosted by Eva Green</p>
         <a href="#register" class="btn hero--btn-gap">Register</a>
@@ -118,82 +118,101 @@
       </section>
 
       <section id="about-us" class="about">
-        <img src="./images/about/hero-mobile.png" alt="Donut, take-away coffee and packaging box" />
-        <h2 class="sub-title">About us</h2>
-        <p class="paragraph">
-          Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated
-          donuts which will save the world!
-        </p>
-        <p class="paragraph">
-          Eva has been baking since she was six years old and over the last 49 years, she has
-          created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
-          shop have received multiple awards & recognition for excellence.<span id="dots"></span>
-        </p>
-        <p class="paragraph">
-          <span id="more">
-            We are going to teach you how to cook with passion and sparkles in your eyes! We love
-            what we do and believe you will enjoy our cooking atmosphere!</span
-          >
-        </p>
-        <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
+        <div class="about--alignment about__img">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="./images/about/hero-desktop.png 1x, ./images/about/hero-desktop@2x.png 2x" />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/about/hero-tablet.png 1x, ./images/about/hero-tablet@2x.png 2x" />
+            <source
+              media="(min-width: 280px)"
+              srcset="./images/about/hero-mobile.png 1x, ./images/about/hero-mobile@2x.png 2x" />
+            <img
+              src="./images/about/hero-mobile.png"
+              alt="Donut, take-away coffee and packaging box"
+          /></picture>
+        </div>
+        <div class="about--alignment about__text">
+          <h2 class="sub-title">About us</h2>
+          <p class="paragraph">
+            Oh My Donut is the shop which adores tasty deserts and spend hours to create
+            sophisticated donuts which will save the world!
+          </p>
+          <p class="paragraph">
+            Eva has been baking since she was six years old and over the last 49 years, she has
+            created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
+            shop have received multiple awards & recognition for excellence.<span id="dots"></span>
+          </p>
+          <p class="paragraph">
+            <span id="more">
+              We are going to teach you how to cook with passion and sparkles in your eyes! We love
+              what we do and believe you will enjoy our cooking atmosphere!</span
+            >
+          </p>
+          <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
+        </div>
       </section>
 
-      <section id="program">
-        <h2 class="sub-title">Program</h2>
-        <p class="paragraph">
-          Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York
-          donut shop!
-        </p>
-        <ul>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            A stand up history of donuts
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            Make 3 donut flavors of your choice
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            Enjoy all-you-can-eat donuts
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            Cocktail pairings and coffee included
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            Photoshoot by professional photographer
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            Secret receipt of cooking from Eva
-          </li>
-          <li class="list-item">
-            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
-              <use href="./images/icons.svg#icon-star"></use>
-            </svg>
-            All products are included in the price
-          </li>
-        </ul>
-        <p class="paragraph">
-          Come with your dear people and friends and you will spend an unforgettable time and will
-          become a real professional in donuts cooking!
-        </p>
+      <section id="program" class="program">
+        <div class="program--alignment">
+          <h2 class="sub-title">Program</h2>
+          <p class="paragraph">
+            Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New
+            York donut shop!
+          </p>
+          <ul>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              A stand up history of donuts
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              Make 3 donut flavors of your choice
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              Enjoy all-you-can-eat donuts
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              Cocktail pairings and coffee included
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              Photoshoot by professional photographer
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              Secret receipt of cooking from Eva
+            </li>
+            <li class="list-item">
+              <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              All products are included in the price
+            </li>
+          </ul>
+          <p class="paragraph">
+            Come with your dear people and friends and you will spend an unforgettable time and will
+            become a real professional in donuts cooking!
+          </p>
+        </div>
 
-        <ul class="characteristic--container">
+        <ul class="characteristic--container program--alignment">
           <li class="characteristic">
             <div class="donut-type"></div>
             <h3 class="characteristic__title">Type of the event</h3>
@@ -249,10 +268,30 @@
         </ul>
       </section>
 
-      <section id="reviews" class="reviews">
-        <h2 class="sub-title">Reviews</h2>
+      <section id="reviews" class="reviews reviewers__main">
+        <h2 class="sub-title title--center">Reviews</h2>
         <div class="reviewer__photo--container">
-          <img src="./images/reviews/will-mobile.jpg" alt="Will" class="reviewer__photo" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/reviews/will-desktop.jpg      1x,
+                ./images/reviews/will-desktop@2x.jpg2x
+              " />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/reviews/will-tablet.jpg    1x,
+                ./images/reviews/will-tablet@2x.jpg 2x
+              " />
+            <source
+              media="(min-width: 280px)"
+              srcset="
+                ./images/reviews/will-mobile.jpg    1x,
+                ./images/reviews/will-mobile@2x.jpg 2x
+              " />
+            <img src="./images/reviews/will-mobile.jpg" alt="Will photo" class="reviewer__photo"
+          /></picture>
           <div class="review-stars">
             <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
               <use href="./images/icons.svg#icon-star"></use>
@@ -275,44 +314,133 @@
         <p class="paragraph review">
           Last time I have visited a cooking course by Eva I was impressed with the way she
           explained everything to people. You can be sure you will manage to cook a delicious dish
-          even if it is your first time in the kitchen! Thank you so much for the masterclass!
-          Looking forward to the next one and highly recommend it to everyone!
+          even if it is your first time in the kitchen!<br />Thank you so much for the
+          masterclass!<br />Looking forward to the next one and highly recommend it to everyone!
         </p>
         <p class="counter">2/15</p>
+        <div class="reviewers__other--left">
+          <div class="reviewer__photo--container">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/reviews/john-desktop.jpg      1x,
+                  ./images/reviews/john-desktop@2x.jpg2x
+                " />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/reviews/john-tablet.jpg    1x,
+                  ./images/reviews/john-tablet@2x.jpg 2x
+                " />
+              <img
+                src="./images/reviews/john-mobile.jpg"
+                alt="John photo"
+                class="reviewer__photo--other"
+            /></picture>
+            <div class="review-stars">
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg
+                width="22"
+                height="22"
+                class="review-star__icon--unactive"
+                aria-label="Star icon"
+              >
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="reviewer__name">John</p>
+        </div>
+        <div class="reviewers__other--right">
+          <div class="reviewer__photo--container">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/reviews/liz-desktop.jpg      1x,
+                  ./images/reviews/liz-desktop@2x.jpg2x
+                " />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/reviews/liz-tablet.jpg    1x,
+                  ./images/reviews/liz-tablet@2x.jpg 2x
+                " />
+              <img
+                src="./images/reviews/liz-mobile.jpg"
+                alt="John photo"
+                class="reviewer__photo--other"
+            /></picture>
+            <div class="review-stars">
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="reviewer__name">Elisabeth</p>
+        </div>
       </section>
 
       <section id="register" class="registration">
-        <h2 class="sub-title">Registration</h2>
-        <p class="registration__details">May 23, 11:00 <span class="break">New York</span></p>
-        <p class="registration__details underline">$ 199</p>
-        <form class="form">
-          <div role="group" arial-labelby="contact-details-head">
-            <p id="contact-details-head" class="form__legend">
-              Apply your personal info <span class="break">for registration</span>
-            </p>
-            <input
-              type="text"
-              name="username"
-              placeholder="Your name"
-              class="form__input"
-              required
-              minlength="2"
-            />
-            <input type="tel" name="phone" placeholder="Phone number" class="form__input" />
-            <input type="email" name="email" placeholder="Email" class="form__input" />
+        <h2 class="sub-title title--center">Registration</h2>
+        <div class="registration--alignment">
+          <div class="registration__details--alignment">
+            <p class="registration__details">May 23, 11:00 <span class="break">New York</span></p>
+            <p class="registration__details underline">$ 199</p>
           </div>
-          <button type="submit" class="btn">Register</button>
-        </form>
+          <form class="form">
+            <div role="group" arial-labelby="contact-details-head" class="input">
+              <p id="contact-details-head" class="form__legend form__legend--align">
+                Apply your personal info <span class="break">for registration</span>
+              </p>
+              <input
+                type="text"
+                name="username"
+                placeholder="Your name"
+                class="form__input"
+                required
+                minlength="2"
+              />
+              <input type="tel" name="phone" placeholder="Phone number" class="form__input" />
+              <input type="email" name="email" placeholder="Email" class="form__input" required />
+            </div>
+            <button type="submit" class="btn btn--center">Register</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer id="contact" class="container footer">
       <div class="bottom--bg"></div>
-      <p class="sub-title">Contact</p>
+      <p class="sub-title title--center">Contact</p>
       <form class="form">
         <div role="group" arial-labelby="your-question">
           <p id="your-question" class="form__legend">We will answer any question!</p>
-          <input type="email" name="email" placeholder="Email" class="form__input" />
+          <input type="email" name="email" placeholder="Email" class="form__input" required />
           <input type="text" placeholder="Type your question" class="form__input" />
         </div>
         <button type="submit" class="btn">Send</button>

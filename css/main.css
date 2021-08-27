@@ -63,14 +63,6 @@ p {
   width: 320px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    padding-left: 67px;
-    padding-right: 67px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -87,20 +79,18 @@ p {
   }
 }
 
-.title {
-  font-family: var(--font-brand);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.26667;
-  text-align: center;
-}
-
 .sub-title {
   font-family: var(--font-brand);
   font-size: 24px;
   font-weight: 400;
   line-height: 2.70833;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-title {
+    text-align: left;
+  }
 }
 
 .paragraph {
@@ -116,6 +106,10 @@ p {
   line-height: 1.25;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+}
+
+.title--center {
+  text-align: center;
 }
 
 .btn {
@@ -143,10 +137,14 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 89px;
+  }
 }
 
 .header--bg {
@@ -157,7 +155,7 @@ p {
   z-index: -20;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .header--bg {
     width: 768px;
     height: 622px;
@@ -188,6 +186,14 @@ p {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .header--bg::after {
   content: ' ';
   position: absolute;
@@ -206,19 +212,18 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .header--bg::after {
-    width: 190px;
-    height: 180.5px;
-    background-image: url("../images/bg/donut-top-480.png");
-    background-size: contain;
-    left: 10%;
+    width: 380px;
+    height: 361px;
+    left: 35%;
+    background-image: url("../images/bg/donut-top-tablet.png");
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .header--bg::after {
-    background-image: url("../images/bg/donut-top-480@2x.png");
+    background-image: url("../images/bg/donut-top-tablet@2x.png");
   }
 }
 
@@ -228,7 +233,27 @@ p {
   align-items: center;
 }
 
-.hero--title-alignment {
+@media screen and (min-width: 768px) {
+  .hero {
+    align-items: flex-start;
+  }
+}
+
+.hero__title {
+  font-family: var(--font-brand);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.26667;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    text-align: left;
+  }
+}
+
+.hero__title--alignment {
   display: block;
   margin-bottom: 5px;
 }
@@ -272,6 +297,23 @@ p {
 
 .about {
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -57px;
+  }
+  .about--alignment {
+    flex-basis: 49%;
+  }
+  .about__img {
+    margin-top: 55px;
+  }
+  .about__text {
+    margin-top: 55px;
+  }
 }
 
 .single-star-icon {
@@ -399,20 +441,49 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .program {
+    display: flex;
+    justify-content: space-between;
+  }
+  .program--alignment {
+    flex-basis: 49%;
+  }
+  .characteristic--container {
+    padding-top: 40px;
+  }
+}
+
 .reviews {
   margin-bottom: 30px;
 }
 
 .reviewer__photo {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewer__photo {
+    width: 186px;
+    height: 186px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviewer__photo {
+    width: 234px;
+    height: 234px;
+  }
 }
 
 .reviewer__photo--container {
-  min-height: 146px;
+  min-height: 136px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .review-stars {
@@ -427,11 +498,18 @@ p {
   margin-right: 4px;
 }
 
+.review-star__icon--unactive {
+  fill: var(--color-bg-add);
+  stroke: var(--color-brand);
+  stroke-width: 2;
+  margin-top: 1px;
+}
+
 .reviewer__name {
   font-style: italic;
   font-size: 14px;
   font-weight: 500;
-  line-height: 4.64286;
+  line-height: 2;
   text-align: center;
 }
 
@@ -459,6 +537,12 @@ p {
   left: 30%;
 }
 
+@media screen and (min-width: 768px) {
+  .counter::before {
+    left: 37%;
+  }
+}
+
 .counter::after {
   content: ' ';
   display: block;
@@ -470,6 +554,52 @@ p {
   left: 58%;
 }
 
+.reviewers__other--left {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewers__other--left {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+}
+
+.reviewers__other--right {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewers__other--right {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviewers__main {
+    position: relative;
+  }
+}
+
+.reviewer__photo--other {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width: 1280px) {
+  .reviewer__photo--other {
+    width: 136px;
+    height: 136px;
+  }
+}
+
 .registration {
   background-color: var(--color-bg);
   border-radius: 150px;
@@ -479,12 +609,25 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .registration {
+    padding-top: 10px;
+    padding-bottom: 95px;
+  }
+}
+
 .registration__details {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22222;
   text-align: center;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__details {
+    text-align: right;
+  }
 }
 
 .break {
@@ -501,16 +644,19 @@ p {
   content: ' ';
   display: block;
   width: 260px;
-  height: 1px;
+  height: 0.5px;
   background-color: var(--color-brand);
   position: absolute;
   bottom: 0;
   left: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .underline::after {
-    left: 42px;
+    width: 190px;
+    transform: rotate(90deg);
+    bottom: 20px;
+    left: 103px;
   }
 }
 
@@ -523,6 +669,7 @@ p {
   font-weight: 400;
   line-height: 1.25;
   margin-bottom: 17px;
+  text-align: center;
 }
 
 .form__input {
@@ -542,6 +689,60 @@ p {
   color: var(--color-brand-transparent);
 }
 
+@media screen and (min-width: 768px) {
+  .form__input {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration--alignment {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .registration__details--alignment {
+    flex-basis: 27%;
+  }
+  .form {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form::after {
+    content: ' ';
+    position: absolute;
+    width: 235px;
+    height: 255px;
+    top: 50%;
+    left: -70%;
+    background-image: url("../images/registration/donut-tasted-tablet.png");
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .form::after {
+    background-image: url("../images/registration/donut-tasted-tablet@2x  .png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn--center {
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__legend--align {
+    text-align: left;
+  }
+}
+
 .footer {
   position: relative;
 }
@@ -551,16 +752,17 @@ p {
   height: 1214px;
   background-image: url("../images/bg/bottom-bg-mobile.svg");
   position: absolute;
-  bottom: 210px;
+  bottom: 250px;
   right: 0;
   z-index: -20;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .bottom--bg {
     width: 768px;
     height: 1260px;
     background-image: url("../images/bg/bottom-bg-tablet.svg");
+    bottom: 0;
   }
 }
 
@@ -615,9 +817,18 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .contact-details::after {
+    width: 147px;
+    height: 144px;
+    background-image: url("../images/bg/donut-bottom-tablet.png");
     right: -67px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .contact-details::after {
+    background-image: url("../images/bg/donut-bottom-tablet@2x.png");
   }
 }
 

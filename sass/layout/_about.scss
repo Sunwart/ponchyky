@@ -5,3 +5,23 @@
 .about {
   margin-bottom: 25px;
 }
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -57px;
+  }
+
+  .about--alignment {
+    flex-basis: 49%;
+  }
+
+  .about__img {
+    margin-top: 55px;
+  }
+
+  .about__text {
+    margin-top: 55px;
+  }
+}
