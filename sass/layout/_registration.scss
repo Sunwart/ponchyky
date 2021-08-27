@@ -67,12 +67,6 @@
 
 .form--no-after {
   text-align: center;
-
-  @media screen and (min-width: 768px) {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 .form__legend {
