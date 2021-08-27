@@ -2,14 +2,12 @@
   font-family: var(--font-brand);
   @include font(30px, 400, 38px);
   text-align: center;
-  // color: var(--color-main);
 }
 
 .sub-title {
   font-family: var(--font-brand);
   @include font(24px, 400, 65px);
   text-align: center;
-  //  color: var(--color-main);
 }
 
 .paragraph {
@@ -19,5 +17,6 @@
 
 .list-item {
   @include font();
+  letter-spacing: -0.02em;
   margin-bottom: 10px;
 }

@@ -89,7 +89,7 @@
           Donut Masterclass <span class="hero--title-alignment">with the Donut King</span>
         </h1>
         <p class="hero__text">Hosted by Eva Green</p>
-        <button type="button" class="btn hero--btn-gap">Register</button>
+        <a href="#register" class="btn hero--btn-gap">Register</a>
 
         <!-- Social media links -->
         <ul class="sm-links">
@@ -117,7 +117,7 @@
         </ul>
       </section>
 
-      <section id="about-us">
+      <section id="about-us" class="about">
         <img src="./images/about/hero-mobile.png" alt="Donut, take-away coffee and packaging box" />
         <h2 class="sub-title">About us</h2>
         <p class="paragraph">
@@ -127,14 +127,15 @@
         <p class="paragraph">
           Eva has been baking since she was six years old and over the last 49 years, she has
           created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
-          shop have received multiple awards & recognition for excellence.
+          shop have received multiple awards & recognition for excellence.<span id="dots"></span>
         </p>
-        <a href="#about-more" id="about-less">Read more</a>
-        <p id="about-more" class="paragraph">
-          We are going to teach you how to cook with passion and sparkles in your eyes! We love what
-          we do and believe you will enjoy our cooking atmosphere!
+        <p class="paragraph">
+          <span id="more">
+            We are going to teach you how to cook with passion and sparkles in your eyes! We love
+            what we do and believe you will enjoy our cooking atmosphere!</span
+          >
         </p>
-        <a href="#about-less">Less</a>
+        <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
       </section>
 
       <section id="program">
@@ -144,92 +145,226 @@
           donut shop!
         </p>
         <ul>
-          <li class="list-item">> A stand up history of donuts</li>
-          <li class="list-item">> Make 3 donut flavors of your choice</li>
-          <li class="list-item">> Enjoy all-you-can-eat donuts</li>
-          <li class="list-item">> Cocktail pairings and coffee included</li>
-          <li class="list-item">> Photoshoot by professional photographer</li>
-          <li class="list-item">> Secret receipt of cooking from Eva</li>
-          <li class="list-item">> All products are included in the price</li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            A stand up history of donuts
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            Make 3 donut flavors of your choice
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            Enjoy all-you-can-eat donuts
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            Cocktail pairings and coffee included
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            Photoshoot by professional photographer
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            Secret receipt of cooking from Eva
+          </li>
+          <li class="list-item">
+            <svg width="13" height="13" aria-label="Star icon" class="single-star-icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            All products are included in the price
+          </li>
         </ul>
-        <a href="#program-more" id="program-less">Read more</a>
-        <p id="program-more" class="paragraph">
+        <p class="paragraph">
           Come with your dear people and friends and you will spend an unforgettable time and will
           become a real professional in donuts cooking!
         </p>
-        <a href="#program-less">Less</a>
-      </section>
 
-      <section>
-        <!-- Section title hidden! -->
-        <h2 class="visually-hidden">Donut masterclass characteristics</h2>
-
-        <ul>
-          <li>
-            <h3>Type of the event</h3>
-            <p>Cooking classes</p>
+        <ul class="characteristic--container">
+          <li class="characteristic">
+            <div class="donut-type"></div>
+            <h3 class="characteristic__title">Type of the event</h3>
+            <p class="characteristic__value">Cooking classes</p>
+            <svg
+              width="19.42"
+              height="18.01"
+              class="characteristic__icon"
+              aria-label="Characteristic icon"
+            >
+              <use href="./images/icons.svg#icon-chef-hat"></use>
+            </svg>
           </li>
-          <li>
-            <h3>Number of guests</h3>
-            <p>1 to 20</p>
+          <li class="characteristic">
+            <div class="donut-number"></div>
+            <h3 class="characteristic__title">Number of guests</h3>
+            <p class="characteristic__value">1 to 20</p>
+            <svg
+              width="20.32"
+              height="18.26"
+              class="characteristic__icon"
+              aria-label="Characteristic icon"
+            >
+              <use href="./images/icons.svg#icon-people"></use>
+            </svg>
           </li>
-          <li>
-            <h3>Time of the event</h3>
-            <p>18:30 (2.5 hours)</p>
+          <li class="characteristic">
+            <div class="donut-time"></div>
+            <h3 class="characteristic__title">Time of the event</h3>
+            <p class="characteristic__value">18:30 (2.5 hours)</p>
+            <svg
+              width="19.72"
+              height="19.72"
+              class="characteristic__icon"
+              aria-label="Characteristic icon"
+            >
+              <use href="./images/icons.svg#icon-clock"></use>
+            </svg>
           </li>
-          <li>
-            <h3>The host speaks</h3>
-            <p>English, French</p>
+          <li class="characteristic">
+            <div class="donut-lang"></div>
+            <h3 class="characteristic__title">The host speaks</h3>
+            <p class="characteristic__value">English, French</p>
+            <svg
+              width="24.83"
+              height="16.8"
+              class="characteristic__icon"
+              aria-label="Characteristic icon"
+            >
+              <use href="./images/icons.svg#icon-chat"></use>
+            </svg>
           </li>
         </ul>
       </section>
 
-      <section id="reviews">
+      <section id="reviews" class="reviews">
         <h2 class="sub-title">Reviews</h2>
-        <img src="./images/reviews/will-mobile.jpg" alt="Will" />
-        <p>
+        <div class="reviewer__photo--container">
+          <img src="./images/reviews/will-mobile.jpg" alt="Will" class="reviewer__photo" />
+          <div class="review-stars">
+            <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg width="24" height="24" class="review-star__icon" aria-label="Star icon">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="reviewer__name">Will</p>
+        <p class="paragraph review">
           Last time I have visited a cooking course by Eva I was impressed with the way she
           explained everything to people. You can be sure you will manage to cook a delicious dish
           even if it is your first time in the kitchen! Thank you so much for the masterclass!
           Looking forward to the next one and highly recommend it to everyone!
         </p>
-        <!-- Counter goes here -->
+        <p class="counter">2/15</p>
       </section>
 
-      <section>
-        <h2>Registration</h2>
-        <p>May 23, 11:00 New York</p>
-        <p>$ 699</p>
-        <form>
-          <p>Apply your personal info for registration</p>
-          <input type="text" name="username" placeholder="Your name" />
-          <input type="tel" name="phone" placeholder="Phone number" />
-          <input type="email" name="email" placeholder="Email" />
-          <button type="submit">Register</button>
+      <section id="register" class="registration">
+        <h2 class="sub-title">Registration</h2>
+        <p class="registration__details">May 23, 11:00 <span class="break">New York</span></p>
+        <p class="registration__details underline">$ 199</p>
+        <form class="form">
+          <div role="group" arial-labelby="contact-details-head">
+            <p id="contact-details-head" class="form__legend">
+              Apply your personal info <span class="break">for registration</span>
+            </p>
+            <input
+              type="text"
+              name="username"
+              placeholder="Your name"
+              class="form__input"
+              required
+              minlength="2"
+            />
+            <input type="tel" name="phone" placeholder="Phone number" class="form__input" />
+            <input type="email" name="email" placeholder="Email" class="form__input" />
+          </div>
+          <button type="submit" class="btn">Register</button>
         </form>
       </section>
     </main>
 
-    <footer id="contact" class="container">
-      <form>
-        <p>Contact</p>
-        <p>We will answer any question!</p>
-        <input type="email" name="email" placeholder="Email" />
-        <textarea name="question" rows="1" placeholder="Type your question"></textarea>
-        <button type="submit">Send</button>
+    <footer id="contact" class="container footer">
+      <div class="bottom--bg"></div>
+      <p class="sub-title">Contact</p>
+      <form class="form">
+        <div role="group" arial-labelby="your-question">
+          <p id="your-question" class="form__legend">We will answer any question!</p>
+          <input type="email" name="email" placeholder="Email" class="form__input" />
+          <input type="text" placeholder="Type your question" class="form__input" />
+        </div>
+        <button type="submit" class="btn">Send</button>
       </form>
 
-      <!-- Social media links should be dublicated here -->
+      <!-- Social media links -->
 
-      <a href="tel:+19102228855">(910)222-8855</a>
-      <a
-        href="https://goo.gl/maps/yh7s9oVqygpCXeji7"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        >New York</a
-      >
+      <ul class="sm-links sm-links--footer">
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="sm-links__item">
+            <svg width="18.95" height="15" aria-label="Twitter link" class="sm-link__icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="sm-links__item">
+            <svg width="15" height="15" aria-label="Instagram link" class="sm-link__icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="sm-links__item">
+            <svg width="8.11" height="15" aria-label="Facebook link" class="sm-link__icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="contact-details">
+        <a href="tel:+19102228855" class="contact-details__item"
+          ><svg width="13" height="13" aria-label="Phone icon" class="sm-link__icon">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          (910)222-8855
+        </a>
+        <a
+          href="https://goo.gl/maps/yh7s9oVqygpCXeji7"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="contact-details__item"
+          ><svg width="11" height="14.44" aria-label="Pin icon" class="sm-link__icon">
+            <use href="./images/icons.svg#icon-location"></use>
+          </svg>
+          New York
+        </a>
+      </div>
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/read-more.js"></script>
   </body>
 </html>

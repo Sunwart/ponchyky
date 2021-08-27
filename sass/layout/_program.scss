@@ -1,0 +1,130 @@
+.single-star-icon {
+  fill: var(--color-brand);
+  margin-right: 7px;
+}
+
+.characteristic {
+  position: relative;
+
+  width: 142px;
+  height: 142px;
+  background-color: var(--color-bg-add);
+  border-radius: 50%;
+  box-shadow: 7px 7px 21px var(--color-brand-transparent);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  &:nth-child(2n + 1) {
+    margin-bottom: 50px;
+  }
+
+  &:nth-child(2n) {
+    margin-top: 50px;
+  }
+}
+
+.donut-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(45%, -50%);
+  width: 76px;
+  height: 84px;
+  background-image: url('../images/donuts/donut-type-mobile.png');
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url('../images/donuts/donut-type-mobile@2x.png');
+  }
+}
+
+.donut-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(60%, -50%);
+  width: 65px;
+  height: 72px;
+  background-image: url('../images/donuts/donut-number-mobile.png');
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url('../images/donuts/donut-number-mobile@2x.png');
+  }
+}
+
+.donut-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(55%, -50%);
+  width: 69px;
+  height: 76px;
+  background-image: url('../images/donuts/donut-time-mobile.png');
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url('../images/donuts/donut-time-mobile@2x.png');
+  }
+}
+
+.donut-lang {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(60%, -50%);
+  width: 65px;
+  height: 72px;
+  background-image: url('../images/donuts/donut-lang-mobile.png');
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 280px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: url('../images/donuts/donut-lang-mobile@2x.png');
+  }
+}
+
+.characteristic__icon {
+  position: absolute;
+  fill: var(--color-dark-brand);
+  bottom: 10px;
+  left: 44%;
+}
+
+.characteristic__title {
+  font-family: var(--font-brand);
+  @include font(18px, 400, 23px);
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.characteristic__value {
+  @include font(14px, 400, 17px);
+  text-align: center;
+}

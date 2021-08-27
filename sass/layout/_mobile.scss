@@ -56,6 +56,8 @@
 
   color: var(--color-main);
 
+  transition: color 250ms linear;
+
   &:hover,
   &:focus,
   &:active {

@@ -1,0 +1,49 @@
+.footer {
+  position: relative;
+}
+
+.bottom--bg {
+  width: 320px;
+  height: 1214px;
+  background-image: url('../images/bg/bottom-bg-mobile.svg');
+
+  position: absolute;
+  bottom: 210px;
+  right: 0;
+  z-index: -20;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 1260px;
+    background-image: url('../images/bg/bottom-bg-tablet.svg');
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 1560px;
+    background-image: url('../images/bg/bottom-bg-desktop.svg');
+  }
+}
+
+.sm-links--footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details__item {
+  @include font(16px, 400, 20px);
+  color: var(--color-main);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
