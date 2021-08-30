@@ -59,6 +59,10 @@
 .counter {
   @include font(14px, 400, 17px);
   text-align: center;
+  display: block;
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-brand);
   position: relative;
 
@@ -74,15 +78,7 @@
     background-color: var(--color-brand);
     position: absolute;
     top: 50%;
-    left: 30%;
-
-    @media screen and (min-width: 768px) {
-      left: 37%;
-    }
-
-    @media screen and (min-width: 1280px) {
-      left: 38%;
-    }
+    left: 0;
   }
 
   &::after {
@@ -93,7 +89,7 @@
     background-color: var(--color-brand);
     position: absolute;
     top: 50%;
-    left: 58%;
+    right: 0;
   }
 }
 
