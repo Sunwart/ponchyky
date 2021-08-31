@@ -115,31 +115,27 @@
   }
 }
 
-.main-nav {
+.menu {
   display: none;
   @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
+    display: flex;
 
-.menu {
-  display: flex;
+    &--gap {
+      margin-top: 55px;
+      margin-right: 20px;
+    }
 
-  &--gap {
-    margin-top: 55px;
-    margin-right: 20px;
-  }
+    &__link {
+      @include font(18px, 400, 22px);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: var(--color-main);
+      transition: color 250ms linear;
 
-  &__link {
-    @include font(18px, 400, 22px);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: var(--color-main);
-    transition: color 250ms linear;
-
-    &:hover,
-    &:focus {
-      color: var(--color-brand);
+      &:hover,
+      &:focus {
+        color: var(--color-brand);
+      }
     }
   }
 }

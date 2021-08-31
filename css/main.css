@@ -293,37 +293,30 @@ p {
   }
 }
 
-.main-nav {
+.menu {
   display: none;
 }
 
 @media screen and (min-width: 1280px) {
-  .main-nav {
-    display: block;
+  .menu {
+    display: flex;
   }
-}
-
-.menu {
-  display: flex;
-}
-
-.menu--gap {
-  margin-top: 55px;
-  margin-right: 20px;
-}
-
-.menu__link {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.22222;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--color-main);
-  transition: color 250ms linear;
-}
-
-.menu__link:hover, .menu__link:focus {
-  color: var(--color-brand);
+  .menu--gap {
+    margin-top: 55px;
+    margin-right: 20px;
+  }
+  .menu__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-main);
+    transition: color 250ms linear;
+  }
+  .menu__link:hover, .menu__link:focus {
+    color: var(--color-brand);
+  }
 }
 
 .hero {
